@@ -38,3 +38,7 @@ data/
       cv.md
       prep.md
 ```
+
+## License
+
+MIT. Use, change and share these freely.
