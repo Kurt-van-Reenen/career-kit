@@ -1,0 +1,5 @@
+# Personal CV data, never commit
+data/
+*.docx
+*.pdf
+.DS_Store
