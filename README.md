@@ -14,15 +14,49 @@ grill-me-for-my-cv  ->  master-cv.md  ->  gen-me-a-cv  ->  get-me-that-job
     as you go)             source of truth)
 ```
 
-## Using them
+## How to install
 
-**Claude Code:** clone this repo and run `claude` inside it. Skills in `.claude/skills/` are picked up automatically for this project. To have them in every project, copy the folders into `~/.claude/skills/`.
+### Claude app (claude.ai, desktop, mobile)
 
-**Claude app (claude.ai, desktop, mobile):** zip each skill folder (the folder itself, with `SKILL.md` inside) and upload it in the Skills section of your settings. Uploaded skills belong to your account only.
+1. Go to the [latest release](https://github.com/Kurt-van-Reenen/career-kit/releases/latest) and download the three zip files:
+   `grill-me-for-my-cv.zip`, `gen-me-a-cv.zip`, `get-me-that-job.zip`
+2. In Claude, open the Skills section of your settings and upload each zip. Don't unzip them first.
+3. Start a new chat and say **"grill me for my CV"**.
 
-## Other AI tools
+Uploaded skills belong to your account only.
 
-These follow the open Agent Skills (`SKILL.md`) format, so they also work in tools such as OpenAI Codex CLI (`.agents/skills/`), GitHub Copilot (reads `.claude/skills/` as-is) and Gemini CLI. In chat apps without skills support, paste a `SKILL.md` in as instructions.
+### Claude Code
+
+Install all three as a plugin with one command:
+
+```
+/plugin install career-kit --marketplace Kurt-van-Reenen/career-kit
+```
+
+On older versions of Claude Code, use two steps:
+
+```
+/plugin marketplace add Kurt-van-Reenen/career-kit
+/plugin install career-kit@career-kit
+```
+
+To get updates later: `/plugin marketplace update career-kit`.
+
+### Other AI tools
+
+The skills follow the open Agent Skills (`SKILL.md`) format, so they work in other tools too. Copy the folders from `skills/` into the tool's skills folder, for example `.agents/skills/` for OpenAI Codex CLI or `.github/skills/` for GitHub Copilot. In chat apps without skills support, paste a `SKILL.md` in as instructions.
+
+## Repo layout
+
+```
+.claude-plugin/
+  plugin.json          plugin details
+  marketplace.json     lets Claude Code install from this repo
+skills/
+  grill-me-for-my-cv/SKILL.md
+  gen-me-a-cv/SKILL.md
+  get-me-that-job/SKILL.md
+```
 
 ## Privacy
 

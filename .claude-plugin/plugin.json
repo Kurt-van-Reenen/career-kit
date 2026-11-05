@@ -1,0 +1,13 @@
+{
+  "name": "career-kit",
+  "version": "1.0.0",
+  "description": "Job-hunting skills for any profession: get grilled into a master CV, generate a tailored CV per job ad, and build a prep plan to land the role.",
+  "author": {
+    "name": "Kurt van Reenen",
+    "url": "https://github.com/Kurt-van-Reenen"
+  },
+  "homepage": "https://github.com/Kurt-van-Reenen/career-kit",
+  "repository": "https://github.com/Kurt-van-Reenen/career-kit",
+  "license": "MIT",
+  "keywords": ["cv", "resume", "job-search", "career", "interview-prep"]
+}
